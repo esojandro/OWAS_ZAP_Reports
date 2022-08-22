@@ -1,0 +1,3705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link
+	href="2022-08-19-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2022-08-19-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2022-08-19-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2022-08-19-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on vie 19 ago 2022, at 11:33:49</span>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alto</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medio</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Bajo</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medio</span> <span>(4)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Bajo</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medio</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Bajo</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://39.106.118.120</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Medio</span>, <span class="risk-level">Bajo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Medio</span>, <span class="confidence-level">Bajo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Medio</span>, <span class="confidence-level">Bajo</span>, <span class="confidence-level">Falso positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">Alto</th>
+							<th scope="col">Medio</th>
+							<th scope="col">Bajo</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(30,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Bajo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(40,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(50,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(60,0 %)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0 %)</span></td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Medio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medio)</span> 
+							</th>
+							<th scope="col">
+								<span>Bajo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Bajo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://39.106.118.120</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(8)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Ausencia de fichas (tokens) Anti-CSRF</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(100,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Divulgación de la marca de hora - Unix</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(60,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Content-Type Header Missing</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Divulgación de información - Comentarios sospechosos</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0 %)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>10</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alto</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://39.106.118.120</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (486 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/login.php HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (387 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:21 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 4013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4013 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;!--&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Architects+Daughter&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheets/stylesheet.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+
+&lt;!--&lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;js/html5.js&quot;&gt;&lt;/script&gt;
+
+&lt;title&gt;bWAPP - Login&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;bWAPP&lt;/h1&gt;
+
+&lt;h2&gt;an extremely buggy web app !&lt;/h2&gt;
+
+&lt;/header&gt;
+
+&lt;div id=&quot;menu&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td&gt;&lt;font color=&quot;#ffb717&quot;&gt;Login&lt;/font&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;user_new.php&quot;&gt;New User&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;info.php&quot;&gt;Info&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;training.php&quot;&gt;Talks &amp; Training&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;main&quot;&gt;
+
+    &lt;h1&gt;Login&lt;/h1&gt;
+
+    &lt;p&gt;Enter your credentials &lt;i&gt;(bee/bug)&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;
+
+        &lt;p&gt;&lt;label for=&quot;login&quot;&gt;Login:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;text&quot; id=&quot;login&quot; name=&quot;login&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt; 
+
+        &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;label for=&quot;security_level&quot;&gt;Set the security level:&lt;/label&gt;&lt;br /&gt;
+
+        &lt;select name=&quot;security_level&quot;&gt;
+
+            &lt;option value=&quot;0&quot;&gt;low&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;medium&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;high&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;/p&gt;
+
+        &lt;button type=&quot;submit&quot; name=&quot;form&quot; value=&quot;submit&quot;&gt;Login&lt;/button&gt;
+
+    &lt;/form&gt;
+
+    &lt;br /&gt;
+    
+&lt;/div&gt;
+
+&lt;div id=&quot;sponsor_2&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;103&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/owasp.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;102&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/zap.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;110&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;152&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.missingkids.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mk.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;br /&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;288&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mme.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;190&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;side&quot;&gt;
+
+    &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/twitter.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://be.linkedin.com/in/malikmesellem&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/linkedin.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/facebook.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/blogger.png&quot;&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disclaimer&quot;&gt;
+
+    &lt;p&gt;bWAPP is licensed under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;vertical-align:middle&quot; src=&quot;./images/cc.png&quot;&gt;&lt;/a&gt; &amp;copy; 2014 MME BVBA / Follow &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;_blank&quot;&gt;@MME_IT&lt;/a&gt; on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive &lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;training&lt;/a&gt;?&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;bee&quot;&gt;
+
+    &lt;img src=&quot;./images/bee_1.png&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: &quot;Content-Security-Policy&quot; for Chrome 25+, Firefox 23+ and Safari 7+, &quot;X-Content-Security-Policy&quot; for Firefox 4.0+ and Internet Explorer 10+, and &quot;X-WebKit-CSP&quot; for Chrome 14+ and Safari 6+.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medio</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://39.106.118.120</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (486 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/login.php HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (387 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:21 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 4013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4013 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;!--&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Architects+Daughter&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheets/stylesheet.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+
+&lt;!--&lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;js/html5.js&quot;&gt;&lt;/script&gt;
+
+&lt;title&gt;bWAPP - Login&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;bWAPP&lt;/h1&gt;
+
+&lt;h2&gt;an extremely buggy web app !&lt;/h2&gt;
+
+&lt;/header&gt;
+
+&lt;div id=&quot;menu&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td&gt;&lt;font color=&quot;#ffb717&quot;&gt;Login&lt;/font&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;user_new.php&quot;&gt;New User&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;info.php&quot;&gt;Info&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;training.php&quot;&gt;Talks &amp; Training&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;main&quot;&gt;
+
+    &lt;h1&gt;Login&lt;/h1&gt;
+
+    &lt;p&gt;Enter your credentials &lt;i&gt;(bee/bug)&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;
+
+        &lt;p&gt;&lt;label for=&quot;login&quot;&gt;Login:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;text&quot; id=&quot;login&quot; name=&quot;login&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt; 
+
+        &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;label for=&quot;security_level&quot;&gt;Set the security level:&lt;/label&gt;&lt;br /&gt;
+
+        &lt;select name=&quot;security_level&quot;&gt;
+
+            &lt;option value=&quot;0&quot;&gt;low&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;medium&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;high&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;/p&gt;
+
+        &lt;button type=&quot;submit&quot; name=&quot;form&quot; value=&quot;submit&quot;&gt;Login&lt;/button&gt;
+
+    &lt;/form&gt;
+
+    &lt;br /&gt;
+    
+&lt;/div&gt;
+
+&lt;div id=&quot;sponsor_2&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;103&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/owasp.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;102&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/zap.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;110&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;152&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.missingkids.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mk.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;br /&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;288&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mme.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;190&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;side&quot;&gt;
+
+    &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/twitter.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://be.linkedin.com/in/malikmesellem&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/linkedin.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/facebook.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/blogger.png&quot;&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disclaimer&quot;&gt;
+
+    &lt;p&gt;bWAPP is licensed under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;vertical-align:middle&quot; src=&quot;./images/cc.png&quot;&gt;&lt;/a&gt; &amp;copy; 2014 MME BVBA / Follow &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;_blank&quot;&gt;@MME_IT&lt;/a&gt; on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive &lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;training&lt;/a&gt;?&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;bee&quot;&gt;
+
+    &lt;img src=&quot;./images/bee_1.png&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Frame-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Bajo</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://39.106.118.120</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Ausencia de fichas (tokens) Anti-CSRF</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No se encontraron fichas (tokens) Anti-CSRF en un formulario HTML.</p>
+
+<p>Una solicutud falsa entre sitios en un ataque que compromete y obliga a una víctima a enviar su solicitud HTTP a un destino objetivo sin su conocimiento o intención para poder realizar una acción como víctima. La causa oculta es la funcionalidad de la aplicación utilizando acciones de URL/formulario que pueden ser adivinados de forma repetible. La naturaleza del ataque es que CSRG explota la confianza que un sitio web proporciona a un usuario. Por el contrario, las cadenas de comandos de los sitios cruzados (XSS) explotan la confianza que un usuario proporciona en un sitio web. Al igual que XSS, los ataques CSRG no son de forma necesaria de sitios cruzados, pero hay la posibilidad de que si pueden serlo. La falsificación de las solicitudes ente los sitios también se conoce como CSRF, XSRG, ataques con un solo clic, montaje de sesión, diputado confundido y navegación en alta mar.</p>
+
+<p>Los ataques de CSRG son muy efectivos en varias situaciones, que incluyen:</p>
+
+<p>*La victima tiene una sesión activa en el sitio de destino.</p>
+
+<p>    *La víctima se autoriza por medio de la autenticación HTTP en el sitio de destino.</p>
+
+<p>    *La víctima se encuentra en la misma red local que el sitio de destino.</p>
+
+<p>CSRF se ha utilizado especialmente para poder realizar una acción contra un sitio objetivo utilizando los privilegios de la víctima, pero se han revelado técnicas recientes para difundir información al obtener el acceso a la respuesta. El riesgo de divulgación de información aumenta de forma drástica cuando el sitio de destino se encuentra vulnerable a XSS, porque XSS se puede utilizar como una plataforma para CSRF, lo que le permite al atacante que opere desde adentro de los líites de la misma política de origen.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Ninguna ficha (token) Anti-CSRF [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] fue encontrada en los siguientes formularios HTML: [Form 1: &quot;login&quot; &quot;password&quot; ].  </p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (486 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/login.php HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (387 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:21 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 4013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4013 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;!--&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Architects+Daughter&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheets/stylesheet.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+
+&lt;!--&lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;js/html5.js&quot;&gt;&lt;/script&gt;
+
+&lt;title&gt;bWAPP - Login&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;bWAPP&lt;/h1&gt;
+
+&lt;h2&gt;an extremely buggy web app !&lt;/h2&gt;
+
+&lt;/header&gt;
+
+&lt;div id=&quot;menu&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td&gt;&lt;font color=&quot;#ffb717&quot;&gt;Login&lt;/font&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;user_new.php&quot;&gt;New User&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;info.php&quot;&gt;Info&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;training.php&quot;&gt;Talks &amp; Training&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;main&quot;&gt;
+
+    &lt;h1&gt;Login&lt;/h1&gt;
+
+    &lt;p&gt;Enter your credentials &lt;i&gt;(bee/bug)&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;
+
+        &lt;p&gt;&lt;label for=&quot;login&quot;&gt;Login:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;text&quot; id=&quot;login&quot; name=&quot;login&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt; 
+
+        &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;label for=&quot;security_level&quot;&gt;Set the security level:&lt;/label&gt;&lt;br /&gt;
+
+        &lt;select name=&quot;security_level&quot;&gt;
+
+            &lt;option value=&quot;0&quot;&gt;low&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;medium&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;high&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;/p&gt;
+
+        &lt;button type=&quot;submit&quot; name=&quot;form&quot; value=&quot;submit&quot;&gt;Login&lt;/button&gt;
+
+    &lt;/form&gt;
+
+    &lt;br /&gt;
+    
+&lt;/div&gt;
+
+&lt;div id=&quot;sponsor_2&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;103&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/owasp.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;102&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/zap.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;110&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;152&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.missingkids.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mk.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;br /&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;288&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mme.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;190&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;side&quot;&gt;
+
+    &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/twitter.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://be.linkedin.com/in/malikmesellem&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/linkedin.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/facebook.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/blogger.png&quot;&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disclaimer&quot;&gt;
+
+    &lt;p&gt;bWAPP is licensed under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;vertical-align:middle&quot; src=&quot;./images/cc.png&quot;&gt;&lt;/a&gt; &amp;copy; 2014 MME BVBA / Follow &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;_blank&quot;&gt;@MME_IT&lt;/a&gt; on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive &lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;training&lt;/a&gt;?&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;bee&quot;&gt;
+
+    &lt;img src=&quot;./images/bee_1.png&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Frase: Arquitectura y Diseño</p>
+
+<p>Utilice una biblioteca o marco comprobado que no acepte que ocura esta debilidad o que proporcione construcciones que permitan que esta debilidad sea mas sencilla de evitar.</p>
+
+<p>Por ejemplo, utilice el paquete anti-CSRG como el CSRGuard de OWASP.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Asegúrese de que su aplicación esté libre de fallas de secuencias de comandos entre sitios, ya que la mayoría de las defensas de CSRF pueden detenerse por alto por medio del uso de secuencias de comandos manejadas por el atacante.</p>
+
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Origina un nonce único para cada uno de los formularios, coloque el nonce en el formularo y confirme la independencia al obtener el formulario. Asegúrese de que el nonce no sea predecible (CWE-330).</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Identificar las operaciones que sean especialmente peligrosas. Cuando el usuario desarrolla una operación peligrosa, envíe una solicitud de confirmación de forma separada para poder garantizar que el usuario tenga la intención de desarrollar esa operación.</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Utilice el control de gestión de la sesión de ESAPI.</p>
+
+<p>Este control introduce un elemento para CSRF.</p>
+
+<p>No utilice el método GET para ninguna de las solicitudes que puedan desencadenar un cambio de estado.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Revise que la solicitud se creó en la página esperada. Esto podría quebrar la funcionalidad auténtica, ya que los usuarios o los representantes puede ser que hayan desactivado el envío de Referer por motivos de privacidad.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medio</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://39.106.118.120</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (477 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/login.php HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (445 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:35:34 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Set-Cookie: PHPSESSID=cl994r809nk40bp5fidjikhpu0; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 4013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4013 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;!--&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Architects+Daughter&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheets/stylesheet.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+
+&lt;!--&lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;js/html5.js&quot;&gt;&lt;/script&gt;
+
+&lt;title&gt;bWAPP - Login&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;bWAPP&lt;/h1&gt;
+
+&lt;h2&gt;an extremely buggy web app !&lt;/h2&gt;
+
+&lt;/header&gt;
+
+&lt;div id=&quot;menu&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td&gt;&lt;font color=&quot;#ffb717&quot;&gt;Login&lt;/font&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;user_new.php&quot;&gt;New User&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;info.php&quot;&gt;Info&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;training.php&quot;&gt;Talks &amp; Training&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;main&quot;&gt;
+
+    &lt;h1&gt;Login&lt;/h1&gt;
+
+    &lt;p&gt;Enter your credentials &lt;i&gt;(bee/bug)&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;
+
+        &lt;p&gt;&lt;label for=&quot;login&quot;&gt;Login:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;text&quot; id=&quot;login&quot; name=&quot;login&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt; 
+
+        &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;label for=&quot;security_level&quot;&gt;Set the security level:&lt;/label&gt;&lt;br /&gt;
+
+        &lt;select name=&quot;security_level&quot;&gt;
+
+            &lt;option value=&quot;0&quot;&gt;low&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;medium&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;high&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;/p&gt;
+
+        &lt;button type=&quot;submit&quot; name=&quot;form&quot; value=&quot;submit&quot;&gt;Login&lt;/button&gt;
+
+    &lt;/form&gt;
+
+    &lt;br /&gt;
+    
+&lt;/div&gt;
+
+&lt;div id=&quot;sponsor_2&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;103&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/owasp.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;102&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/zap.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;110&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;152&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.missingkids.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mk.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;br /&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;288&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mme.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;190&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;side&quot;&gt;
+
+    &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/twitter.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://be.linkedin.com/in/malikmesellem&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/linkedin.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/facebook.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/blogger.png&quot;&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disclaimer&quot;&gt;
+
+    &lt;p&gt;bWAPP is licensed under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;vertical-align:middle&quot; src=&quot;./images/cc.png&quot;&gt;&lt;/a&gt; &amp;copy; 2014 MME BVBA / Follow &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;_blank&quot;&gt;@MME_IT&lt;/a&gt; on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive &lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;training&lt;/a&gt;?&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;bee&quot;&gt;
+
+    &lt;img src=&quot;./images/bee_1.png&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Una cookie ha sido enviada sin el atributo SameSite, lo que significa que la cookie puede ser enviada como un resultado de una solicitud &#39;cross-site&#39;. </p>
+
+<p>El atributo SameSite es una medida efectiva contra solicitudes de falsificación de cross-site, inclusión de secuencias cross-site, y ataques sincronizados.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (477 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/login.php HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (445 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:35:34 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Set-Cookie: PHPSESSID=cl994r809nk40bp5fidjikhpu0; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 4013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4013 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;!--&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Architects+Daughter&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheets/stylesheet.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+
+&lt;!--&lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;js/html5.js&quot;&gt;&lt;/script&gt;
+
+&lt;title&gt;bWAPP - Login&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;bWAPP&lt;/h1&gt;
+
+&lt;h2&gt;an extremely buggy web app !&lt;/h2&gt;
+
+&lt;/header&gt;
+
+&lt;div id=&quot;menu&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td&gt;&lt;font color=&quot;#ffb717&quot;&gt;Login&lt;/font&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;user_new.php&quot;&gt;New User&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;info.php&quot;&gt;Info&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;training.php&quot;&gt;Talks &amp; Training&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;main&quot;&gt;
+
+    &lt;h1&gt;Login&lt;/h1&gt;
+
+    &lt;p&gt;Enter your credentials &lt;i&gt;(bee/bug)&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;
+
+        &lt;p&gt;&lt;label for=&quot;login&quot;&gt;Login:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;text&quot; id=&quot;login&quot; name=&quot;login&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt; 
+
+        &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;label for=&quot;security_level&quot;&gt;Set the security level:&lt;/label&gt;&lt;br /&gt;
+
+        &lt;select name=&quot;security_level&quot;&gt;
+
+            &lt;option value=&quot;0&quot;&gt;low&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;medium&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;high&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;/p&gt;
+
+        &lt;button type=&quot;submit&quot; name=&quot;form&quot; value=&quot;submit&quot;&gt;Login&lt;/button&gt;
+
+    &lt;/form&gt;
+
+    &lt;br /&gt;
+    
+&lt;/div&gt;
+
+&lt;div id=&quot;sponsor_2&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;103&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/owasp.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;102&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/zap.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;110&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;152&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.missingkids.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mk.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;br /&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;288&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mme.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;190&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;side&quot;&gt;
+
+    &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/twitter.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://be.linkedin.com/in/malikmesellem&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/linkedin.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/facebook.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/blogger.png&quot;&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disclaimer&quot;&gt;
+
+    &lt;p&gt;bWAPP is licensed under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;vertical-align:middle&quot; src=&quot;./images/cc.png&quot;&gt;&lt;/a&gt; &amp;copy; 2014 MME BVBA / Follow &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;_blank&quot;&gt;@MME_IT&lt;/a&gt; on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive &lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;training&lt;/a&gt;?&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;bee&quot;&gt;
+
+    &lt;img src=&quot;./images/bee_1.png&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese que el atributo SameSite está establecido como &#39;lax&#39; o idealmente &#39;strict&#39; para todas las cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor de la web/aplicación está divulgando información mediante uno o más encabezados de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;. El acceso a tal información podría facilitarle a los atacantes la identificación de otros marcos/componentes de los que su aplicación web depende y las vulnerabilidades a las que pueden estar sujetos tales componentes.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (486 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/login.php HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (387 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:21 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 4013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4013 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;!--&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Architects+Daughter&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheets/stylesheet.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+
+&lt;!--&lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;js/html5.js&quot;&gt;&lt;/script&gt;
+
+&lt;title&gt;bWAPP - Login&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;bWAPP&lt;/h1&gt;
+
+&lt;h2&gt;an extremely buggy web app !&lt;/h2&gt;
+
+&lt;/header&gt;
+
+&lt;div id=&quot;menu&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td&gt;&lt;font color=&quot;#ffb717&quot;&gt;Login&lt;/font&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;user_new.php&quot;&gt;New User&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;info.php&quot;&gt;Info&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;training.php&quot;&gt;Talks &amp; Training&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;main&quot;&gt;
+
+    &lt;h1&gt;Login&lt;/h1&gt;
+
+    &lt;p&gt;Enter your credentials &lt;i&gt;(bee/bug)&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;
+
+        &lt;p&gt;&lt;label for=&quot;login&quot;&gt;Login:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;text&quot; id=&quot;login&quot; name=&quot;login&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt; 
+
+        &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;label for=&quot;security_level&quot;&gt;Set the security level:&lt;/label&gt;&lt;br /&gt;
+
+        &lt;select name=&quot;security_level&quot;&gt;
+
+            &lt;option value=&quot;0&quot;&gt;low&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;medium&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;high&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;/p&gt;
+
+        &lt;button type=&quot;submit&quot; name=&quot;form&quot; value=&quot;submit&quot;&gt;Login&lt;/button&gt;
+
+    &lt;/form&gt;
+
+    &lt;br /&gt;
+    
+&lt;/div&gt;
+
+&lt;div id=&quot;sponsor_2&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;103&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/owasp.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;102&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/zap.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;110&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;152&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.missingkids.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mk.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;br /&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;288&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mme.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;190&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;side&quot;&gt;
+
+    &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/twitter.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://be.linkedin.com/in/malikmesellem&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/linkedin.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/facebook.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/blogger.png&quot;&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disclaimer&quot;&gt;
+
+    &lt;p&gt;bWAPP is licensed under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;vertical-align:middle&quot; src=&quot;./images/cc.png&quot;&gt;&lt;/a&gt; &amp;copy; 2014 MME BVBA / Follow &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;_blank&quot;&gt;@MME_IT&lt;/a&gt; on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive &lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;training&lt;/a&gt;?&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;bee&quot;&gt;
+
+    &lt;img src=&quot;./images/bee_1.png&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/5.5.9-1ubuntu4.14</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese que su servidor web, servidor de aplicación, equilibrador de carga, etc. está configurado para suprimir encabezados &#39;&#39;&#39;&#39;X-Powered-By&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (486 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/login.php HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (387 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:21 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.14
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 4013
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4013 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+
+&lt;!--&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=Architects+Daughter&quot;&gt;--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;stylesheets/stylesheet.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+
+&lt;!--&lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;--&gt;
+&lt;script src=&quot;js/html5.js&quot;&gt;&lt;/script&gt;
+
+&lt;title&gt;bWAPP - Login&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;bWAPP&lt;/h1&gt;
+
+&lt;h2&gt;an extremely buggy web app !&lt;/h2&gt;
+
+&lt;/header&gt;
+
+&lt;div id=&quot;menu&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td&gt;&lt;font color=&quot;#ffb717&quot;&gt;Login&lt;/font&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;user_new.php&quot;&gt;New User&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;info.php&quot;&gt;Info&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;training.php&quot;&gt;Talks &amp; Training&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;main&quot;&gt;
+
+    &lt;h1&gt;Login&lt;/h1&gt;
+
+    &lt;p&gt;Enter your credentials &lt;i&gt;(bee/bug)&lt;/i&gt;.&lt;/p&gt;
+
+    &lt;form action=&quot;/login.php&quot; method=&quot;POST&quot;&gt;
+
+        &lt;p&gt;&lt;label for=&quot;login&quot;&gt;Login:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;text&quot; id=&quot;login&quot; name=&quot;login&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt; 
+
+        &lt;p&gt;&lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;&lt;br /&gt;
+        &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot; autocomplete=&quot;off&quot;&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;label for=&quot;security_level&quot;&gt;Set the security level:&lt;/label&gt;&lt;br /&gt;
+
+        &lt;select name=&quot;security_level&quot;&gt;
+
+            &lt;option value=&quot;0&quot;&gt;low&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;medium&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;high&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;/p&gt;
+
+        &lt;button type=&quot;submit&quot; name=&quot;form&quot; value=&quot;submit&quot;&gt;Login&lt;/button&gt;
+
+    &lt;/form&gt;
+
+    &lt;br /&gt;
+    
+&lt;/div&gt;
+
+&lt;div id=&quot;sponsor_2&quot;&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;103&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/owasp.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;102&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/zap.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;110&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;152&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.missingkids.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mk.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+    &lt;br /&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+
+            &lt;td width=&quot;288&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/mme.png&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td width=&quot;190&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;https://www.netsparker.com/?utm_source=bwappapp&amp;utm_medium=banner&amp;utm_campaign=bwapp&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;./images/netsparker.gif&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;side&quot;&gt;
+
+    &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/twitter.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://be.linkedin.com/in/malikmesellem&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/linkedin.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/facebook.png&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://itsecgames.blogspot.com&quot; target=&quot;blank_&quot; class=&quot;button&quot;&gt;&lt;img src=&quot;./images/blogger.png&quot;&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;disclaimer&quot;&gt;
+
+    &lt;p&gt;bWAPP is licensed under &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;vertical-align:middle&quot; src=&quot;./images/cc.png&quot;&gt;&lt;/a&gt; &amp;copy; 2014 MME BVBA / Follow &lt;a href=&quot;http://twitter.com/MME_IT&quot; target=&quot;_blank&quot;&gt;@MME_IT&lt;/a&gt; on Twitter and ask for our cheat sheet, containing all solutions! / Need an exclusive &lt;a href=&quot;http://www.mmebvba.com&quot; target=&quot;_blank&quot;&gt;training&lt;/a&gt;?&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;bee&quot;&gt;
+
+    &lt;img src=&quot;./images/bee_1.png&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Bajo</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://39.106.118.120</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Divulgación de la marca de hora - Unix</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/stylesheets/stylesheet.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Una marca de tiempo ha sido divulgada por el servidor de la aplicación/el navegador - Unix</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>20110126, que evalúa a: 1970-08-21 12:08:46</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (432 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/stylesheets/stylesheet.css HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://39.106.118.120/login.php
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (307 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:23 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Last-Modified: Fri, 22 May 2020 17:06:49 GMT
+ETag: &quot;195a-5a63fa7a03c40&quot;
+Accept-Ranges: bytes
+Content-Length: 6490
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/css
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6490 bytes)</summary>
+				
+				<pre><code>/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, u, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+        margin: 0;
+        padding: 0px;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+        display: block;
+}
+
+body {
+        line-height: 1;
+        text-align: justify; 
+}
+
+blockquote, q {
+        quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+        content: &quot;&quot;;
+        content: none;
+}
+
+table {
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+/* Layout styles */
+body {
+        font-size: 15px;
+        line-height: 1.5;
+        background: #fafafa url(&quot;../images/bg_3.jpg&quot;) 0 0 repeat;
+        font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, serif;
+        font-weight: 400;
+        color: #666;
+}
+
+a {
+        color: #ff4500; 
+}
+
+a:hover {
+        color: #ffa319;       
+}
+
+ul, ol, dl {
+        margin-top: 5px;
+        margin-bottom: 5px;
+}
+
+/* Common styles */
+hr {
+        height: 1px;
+        line-height: 1px;
+        margin-top: 1em;
+        padding-bottom: 1em;
+        border: none;
+}
+
+form {
+        padding: 0px;  
+}
+
+select {
+        font-family: Arial;
+        font-size: 14px;
+        padding: 2px;
+}
+
+header {
+        font-family: &quot;Architects Daughter&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, serif; 
+        background: #ffb717 url(&quot;../images/bg_1.jpg&quot;) 0px 0px repeat-x;
+        border-bottom: solid 0px #191919;
+        padding-top: 44px;
+        padding-bottom: 38px;
+        padding-left: 100px;
+        min-width: 1160px;
+        /*min-width: 940px;*/
+}
+
+header h1 {
+        font-size: 72px;
+        color: #ffffff;
+        line-height: 1;
+        letter-spacing: -1px;
+        margin-bottom: 0.2em;
+}
+
+header h2 {
+        font-size: 32px;
+        color: #ff4500;
+        line-height: 0.8; /* Finetuning */
+}
+
+/* My styles */
+#menu {
+        font-family: &quot;Architects Daughter&quot;;
+        font-size: 18px;
+        color: #ffffff;
+        background: url(&quot;../images/bg_2.jpg&quot;) 0px 0px repeat-x;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        min-width: 1250px;
+        /*min-width: 1030px;*/
+}
+
+#menu a { 
+        color: #ffffff;
+        text-decoration:none;
+}
+
+#menu a:hover {
+        color: #ffb717;
+        /*color: #ffa319;*/      
+}
+
+#menu table {
+        border: 0px solid #ebebeb;
+
+}
+
+#menu th {
+        font-weight: 500;
+}
+
+#menu td {
+        border: 0px solid #ebebeb;
+        padding-left: 40px;
+        vertical-align: middle;
+}
+
+#main {
+        padding-left: 100px;
+        padding-top: 25px;    
+        position: relative;
+        width: 760px;
+        margin-bottom: 50px;
+}
+
+#main p {
+        padding-bottom: 12px;
+}
+
+#main a { 
+        text-decoration:none; 
+        font-weight:bold;
+        color: #666;
+}
+
+#main h1 {
+        font-family: &quot;Architects Daughter&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, serif; 
+        font-size: 40px;
+        letter-spacing: -1px;
+        color: #474747;
+        padding-bottom: 12px;
+} 
+
+#main h1:before {
+        content: &quot;/&quot;;
+        color: #ff4500;
+        padding-right: 15px;
+}
+
+#main h1:after {
+        content: &quot;/&quot;;
+        color: #ff4500;
+        padding-left: 15px;
+}
+
+#main h2 {
+        font-family: &quot;Architects Daughter&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, serif; 
+        font-size: 30px;
+        letter-spacing: -1px;
+        color: #474747;
+        padding-bottom: 18px;
+} 
+
+#main h2:before {
+        content: &quot;//&quot;;
+        color: #ff4500;
+        padding-right: 15px;
+}
+
+#main h2:after {
+        content: &quot;//&quot;;
+        color: #ff4500;
+        padding-left: 15px;
+}
+
+#frame {
+        position: relative;
+        margin-bottom: 50px;
+}
+
+#frame p {
+        padding-bottom: 12px;
+}
+
+#side {
+        background: transparent url(&quot;../images/sb_1.jpg&quot;) 0 0 no-repeat;
+        padding-left: 40px;
+        min-height: 400px;
+        position: absolute;
+        top: 300px;
+        left: 980px;
+}
+
+#sponsor {
+        min-height: 100px;
+        min-width: 467px;
+        position: absolute;
+        top: 500px;
+        left: 470px;
+}
+
+#sponsor_2 {
+        min-height: 100px;
+        min-width: 467px;
+        position: absolute;
+        top: 300px;
+        left: 470px;
+}
+
+.button {
+        margin-bottom: 4px;
+        display: block;
+}
+
+#disclaimer {
+        font-family: &quot;Architects Daughter&quot;;
+        font-size: 14px;
+        color: #ffffff;
+        background: url(&quot;../images/bg_2.jpg&quot;) 0px 0px repeat-x;
+        padding: 9px;
+        padding-left: 50px;
+        position: fixed;
+        bottom: 0px;
+        height: 20px;
+        /*min-width: 100%;*/
+        min-width: 2560px;
+        /*width: 100%;*/
+}
+
+#bug {
+        font-family: &quot;Architects Daughter&quot;;
+        font-size: 20px;
+        font-weight: normal;
+        color: #000000;
+        position: absolute;
+        top: 15px;
+        /*left: 750px;*/
+        right: 30px;
+        min-width: 430px;
+}
+
+#security_level {
+        font-family: &quot;Architects Daughter&quot;;
+        font-size: 20px;
+        font-weight: normal;
+        color: #000000;
+        position: absolute;
+        top: 88px;
+        /*left: 750px;*/
+        right: 30px;
+        min-width: 430px;
+}
+
+#bee {
+        position: absolute;
+        top: 18px;
+        left: 342px;
+        height: 35px;
+        width: 35px;
+        /*opacity:0.6; Makes the image transparant
+        filter:alpha(opacity=60); For IE8 and earlier */        
+}
+
+#table_yellow {
+        border: 0px
+}
+
+#table_yellow td {
+        border: 1px solid #ebebeb;
+        padding: 10px; 
+        vertical-align: middle;
+}
+
+#select_portal {
+        font-size: 14px;
+        font-family: Arial;
+        width: 350px;
+        padding: 1px;
+}
+
+@font-face {
+  font-family: &#39;Architects Daughter&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: local(&#39;Architects Daughter&#39;), local(&#39;ArchitectsDaughter&#39;), url(../fonts/architectsdaughter.ttf) format(&#39;truetype&#39;);
+}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>20110126</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Confirmar manualmente que los datos de marca de hora no son sensibles, y que los datos no pueden ser agregados a patrones explotables de divulgación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medio</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://39.106.118.120</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Content-Type Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/fonts/architectsdaughter.ttf</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Content-Type header was either missing or empty.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (495 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/fonts/architectsdaughter.ttf HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://39.106.118.120/stylesheets/stylesheet.css
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Sec-Fetch-Dest: font
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (261 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:24 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Last-Modified: Fri, 22 May 2020 17:06:49 GMT
+ETag: &quot;a974-5a63fa7a03c40&quot;
+Accept-Ranges: bytes
+Content-Length: 43380
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (43380 bytes)</summary>
+				
+				<pre><code>       PFFTM\ÝÈ.  ©X   OS/2°W²  X   `cmapwµ  8  @gasp     ©P   glyfa  D  ]0head÷Ô[   Ü   6hheaC     $hmtxÞN  ¸  locaîÃØÔ  
+  Âmaxp¯ Ì  8    nameµ  jt  7épost_Ä¹f  ¢`  ípreph  
+x        BÆi_&lt;õ      Ê3©    Ê3©ÿþQÊò             òþc  ×ÿÿ|Ê               `   ` \  l         @        Í   Í  è 3                /@  J        pyrs @  ûòþc  ò       ·£     ´      ´       ò 6 8: 	 ®  ¦ 1 h  &#39; 
+ ¶ÿê&gt;   Ò  &amp;  J 	 
+¹ IÕ  v 
+ G  «  ÿêç Tø @ã 2 
+,  Ø Õ  &amp;^ Å &amp;Å l    	l +Å 7O  ®  &amp;Ú Ú . ~  ?  Ã f # # ³   *  : ¿   ° /	 ?   	* `  û    ¶ÿu  ¡    &quot;@ 4: &gt; $5     &quot;&lt; .â 2 û i 4  4ê Ç    (ÿê@ÿÿ#ÿö   
+| B &amp; ÿ 
+Î Tf I &amp;&gt;  á   	P  ° ö !    + s   2{  s 	ðÿã       Õ ^ ^ ^ ^      ÿÇ ÿÑº 
+ ® ® ® ® ® â L® ? ? ? ? #  !Ø I	 	 	 	 	 	 ²  * * * *     ! ÿ¼ ÿÚR 3  &quot;@ 4@ 4@ 4@ 4@ 4` :@ 4    2  2  	  !	  	 Õ  Õ  Õ  Õ   &amp;^ * ^ * ^ * ^ * ^ * Å  Å  Å  Å  l û l ûÿñ ÿ ÿ ÿ¼ ÿß ÿÕ ÿô    6 	 ¬ÿl +u Å 7 ¡ Å 7 ¡ Å 7Å 71 Å 	 ¡ÿÁ   &quot;   &quot;   &quot;  &quot;® @ 4® @ 4® @ 4&lt; § Ú .5 Ú .5 Ú .5         ~   ~  ~  ÿö?  ?  ?  ?  ?  ?  Ã &lt; .# 2 # # û # û # û `  ² ® @ 4  : :  ü   &quot; á  ü &amp;Ç  ,Ã &lt; .Ã &lt; .Ã &lt; .# 2 &gt; ¥  ¦  ¦  ¦ # ò 6 ò 6 U   Å !± ç Tã 2Ò . ×  &gt; ½ Î  { ÿÁ              6         &lt;     ~ ¬),17=Id~ÿÇÝó    &quot; &amp; : D ¬!&quot;&quot;ûÿÿ       ®+.49?LfüÆØò      &amp; 9 D ¬!&quot;&quot;ûÿÿÿã  ÿÀÿ½ÿ¼ÿ»ÿ¹ÿ¸ÿ·ÿµÿ´ÿ¡ÿ8ÿ þtþdâÂâVá7á4á3á2á/ááà­à8ßI[    :                                                          b c d e f g h i j k l m 
+                                                                       	 
+                        ! &quot; # $ % &amp; &#39; ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a          ¡   ¢ ¤ £ ¥ § © ¨ ª « ­ ¬ ® ¯ ± ³ ² ´ ¶ µ º ¹ » ¼R p c d hT v  n jZ t i       q     f u           k z   ¦ ¸  b m  3     l {U    JKOPLM ·   ¿,XYVW\]S wNQ                    ì:@ o&lt;=&gt; xA?;¸ÿ°            $ N ¾&quot;FrÂ&quot;&lt;VrªÈRä4jÒDfÆê(¦þZÎ		\	´	ú
+
+F
+
+®
+HvºÐLxÒ&lt;p¾ *D\¨ð8Òd Ä
+PpÈ&gt;Àþ&lt;j°Þ2~´úHZªÜè&gt;tüî¬Ú$0&lt;TªÜö.:F®ÄÐÜèô ª¶ÂÎÚæò@LXdp|ÌØäðü\¨´ÀÌØäðü     , 8 ^  ¼ ì!&gt;!J!V!b!n!z!!! !¬!¸!Ä!Ð!Ü&quot; &quot;,&quot;8&quot;D&quot;P&quot;\&quot;h&quot;t&quot;&quot;&quot;&quot;¤&quot;°&quot;¼&quot;È&quot;Ô&quot;à&quot;ì&quot;ø####(#4#@#L#X#d#p#|### #¬#¸#Ä#Ð#Þ#ê#ö$6$^$j$v$$$¢$®%%% %,%8%D%P%\%h%t%%%%¤%°%¼%È%Ô%à%ì%ø&amp;&amp;&amp;&amp;(&amp;&amp;ú&#39;&#39;&#39;&#39;*&#39;6&#39;B&#39;N&#39;Z&#39;f&#39;r&#39;~&#39;&#39;&#39;¢&#39;®&#39;º&#39;Æ&#39;Ò&#39;à&#39;ì&#39;ø((((((4(@(L(X(d(p(|((( (¬(¸(Ä(Ð(Ü(è(ô)8)F)V)f)x)))º)â***J*n* *Ä*Ð*Ü*è*ô+ +++$+&gt;+Z+p+++Æ+ð,,H,,ª,Ú--,-L-À.&lt;.V.b.n..    ÿù | 
+   72&quot;&amp;&#39;&amp;#475?*%[CC	(
+aý«-g-i  6ê ×û    7&#39;47#&quot;&#39;7&#39;47#&quot;$$\$$R)SÇ&quot;W*SÇ&quot;     8 Æ C P  43235&quot;.&#39;&amp;47&gt;763546327533#&quot;&amp;#263#5&amp;&quot;#&quot;&#39;&amp;&#39;.$&amp;&quot;27654V*%&gt;!!1	d2!°IC&lt;q&lt;¡(8)#	8&quot;#=&amp;S	Y
+tm
+6f .c
+bj3&quot;  	ÿü+p - 5 D  %#&#39;#&#39;&amp;&#39;&amp;&#39;67675#&quot;&#39;&amp;5&amp;4676753337&amp;#&quot;6%7:63&#39;4&amp;&quot;W&#39; N	V6($BM1!È¶ã(41(}
+$9þÁ+./Ç¥Æ.
+&amp;9*èÇ*¿	(6)¡W&#39;m%(*   Û[   ) 6 H  $&amp;47632#&quot;7&amp;#&quot;7&lt; &amp;47632#&quot;7&amp;#&quot;764&quot;=4&gt;362A(/*(B$þ(/*(B#U©eO1;C IH5!.2!d!C5!.2!d!þ	!
+gF[hm1o    ÿþª 6 C P  %#&quot;&#39;.##&#39;*&#39;&amp;&#39;&amp;47&amp;&#39;&amp;5676323&gt;767232&gt;767&#39;676574&amp;&quot;n,.#%a 	,¶,&lt;//$n[,&gt;9**
+6gýâ/G!9O¦ U}.+&amp;L
+D&quot;L1BfC3#(uÓ(L%$ *&#39;&#39;BKC/¦0|8]GH
+%1    ¶ k 	  276h&quot;
+	08k#)C°     `   7&quot;.&#39;&amp;4&gt;7632Ç=,&quot;+;&lt;^= % &quot;+CQ&#39;JG_ps/juw]XX     J/   &#39;4632#&quot;&amp;5&gt;4.SAN#2840&quot;%@Uû]s¹17CKLE*IIOxbV   &#39; q» 7  7674&#39;&amp;&#39;&amp;54732?632&gt;3.&#39;#&quot;&amp;56RG$5%.&#39;
+
+R0
+Z/.45
+#(	¾4		)
+Ø%k: #
+4#B/	
+)/)
+-*  
+ &quot;õ *  4323#&quot;&#39;.&#39;&amp;&#39;&quot;547&gt;5Ò#
+Ü^A
+
+%K=d&lt;(â&amp;*&amp;&#39;*?+7K#
+  ÿêÿ« t g   7&gt;2#&quot;&#39;0	V!    Ø+&amp;   7&quot;54&gt;72P29W0	Ø
+
+  ÿÿ l C   &amp;547622.
+	     »±   3&quot;=667&#39;|?Y0o 
+,:FK¬   &amp;ÿþgg  %  7.4&gt;7632#&quot;&#39;3265454&amp;#*#&quot;t$*%5&quot;K_D?_]YWÀrc541# ,EPn^X&quot;I^U~SP¹szHBg^      n6   74&gt;7&amp;624QfpfPýþ     
+;I .  %2#&quot;&amp;767654&#39;&amp;&#39;&quot;#6767622&gt;!,70-&gt;$qC&quot;KQy.,813%4_&quot;(
+&#39;8$#/R\Z§2
+
+BhW	$,$!@02¬/(!   
+ÿþñ/ *  &quot;.5&gt;764&amp;#&quot;&#39;$54&#39;&quot;#476762â`{0&quot;GO!Kr!&#39;&amp;L#/9;R+*/¹û&lt;Q8/@&gt;F&amp;/&gt;&gt;-=(/
+&#39;     Iÿñ¨?  $  &quot;&#39;7#&#39;#&quot;&amp;5676327:67IxH52;BÝ¹N?&lt;00Z6ÆDEÙè&quot;&#39;1P6è99:      Åy =  76?&gt;22&gt;326762#&quot;&amp;54632&gt;4&amp;&#39;&amp;&quot;+&quot;	FF
+/P~µ{ )LP5&quot;I	E4b vh=$(f4C#&quot;!E:Rd$&amp;W?W1$!;X(
+
+  ÿül ( 4  &lt;&gt;76323&gt;7672#&quot;&#39;&amp;&#39;&amp;%4&quot;2&gt;/?%PPxQQ&#39;!)3&lt;!JK&quot;cQiA7p-@M%0B+JZ@-VSJ=
+fe{(V)*11,#yC8,j2&quot;0 (G
+(A     
+  b6 &quot;  !&#39;4547&gt;7&quot;&quot;&#39;.54672&gt;326?2	65Â[$FxD®(:\5`&#39;
+		
+Á¶&#39;F      ÿÿ~X   0 D   &quot;&amp;&#39;&amp;54&gt;4&amp;&#39;&amp;4&gt;763226765&amp;#&quot;&amp;#&quot;32&gt;7674&amp;&#39;%1: Gl^W&amp;Y %  5D#D&gt;Uþ}D/d&amp;UXWS&amp;+@?&amp;0@A&lt;
+D&#39;X7&amp;)DeB (P1,&#39;	88+
+þHC=gQ&#39;&amp;5WE&quot;	       i &quot; 0  3.5&gt;7&amp;&quot;&quot;.&#39;&amp;547676232764&amp;&#39;&amp;&#39;&quot;÷`S,
+&quot;=#P.-=eRQ#u!&quot;9#LÅ.Dce849WV7	JH;$e%4&gt;i`%R~)!+U      e q 	   7462*&amp;&#39;&amp;5467&quot;M&quot; 	~
+Ï  ÿêÿZ `g    72&#39;&amp;&gt;2#&quot;DGSu@I$QÁ    T ;¯Ó   7&gt;7672#.&#39;&amp;T V,l/ë8&quot;Q=	pDDåD&quot;U	³((&#39;&quot;   @ Ël    7&quot;546367672&quot;&#39;&quot;&#39;767&gt;2^MA}G&quot;9W(i7O¤A#$	$		
+  2 0ª½   7&amp;&#39;4547&gt;7%7v-Gi@þø21SML)OWU0*=1c1#?BD   
+ÿüò¼ 	 (  &quot;4362&quot;&quot;54767654&#39;&quot;#&quot;&amp;&#39;632$$)i+D&quot;~sS7mp&lt;bsF 2
+JR5/)&amp;ICR,,!    ÿûª F U  #&quot;&#39;&amp;476763262325&amp;&#39;&amp;&#39;&quot;&gt;76762&quot;&#39;&quot;&#39;&amp;&#39;&amp;54&gt;32&quot;&#39;&amp;#&quot;2676PkM$a0B&quot;Q	ZQ`TuF sAoTEhvªX]gV&amp;Q¯_a2@.@&quot;$C&quot; NV[9C&quot; !:P94=mY_--mQ&gt;2%?!-a­K:at,p %$     ÿñ~º . 8  32&#39;.&quot;&#39;&#39;&amp;54&gt;763&#39;2767&amp;%6
+$ -þï
+$ *+/*&quot;
+(+/! 	$ì8&quot;Dc/n(H$Y&#39;)C*s-
+ps~r[)MXZ%Ø=G(	É   ÿùÄ¨ ! + ;  62#&quot;&#39;&amp;&#39;&amp;47&quot;&amp;54&gt;54&#39;&amp;&quot;#&quot;276764.&#39;&amp;AJg4nM3_éS.LSwfN8}¡Î[&lt;A×uR
+
+ZT&#39;-7(
+5,3&quot;#7&#39;6:&gt;)&amp;@DÏpýª	;E *&lt;É+#&amp;	     ÿÿÀ &amp;  &amp;#&quot;367672#&quot;#&quot;&#39;&amp;54&gt;32
+AOKEW!C?b{&quot;&amp;cD~foOT;gQE+@9Hr)6c51\V&amp;DEImRsD     &amp;   &quot;  632#&quot;&#39;32&amp;&#39;&amp;#27676iJzßR ukhDÔ	ZCe_EFi¶Dfn*A		dga;(pÐY+ þ#3Zw*    J~ &quot;  22&gt;32&gt;3&#39;3ad!^56D¯`3þcÏk&lt;°þë0F{1P:&#39;570¤	 ~    &amp;ÿø»z 9  7&amp;54674.4623&gt;762&#39;32&gt;323#&#39;&quot;#^8&amp;$(CBk!ýõ	9uuv9+q1f+c%¦&quot;&lt;RD	;A]	Ä   ÿÀ® ;  5#&quot;&#39;&amp;56767632372327676=&quot;.&#39;&amp;7&gt;76&quot;ð_%VAN89&lt;EZ.Pg;P?6`=Û.òB
+ S81·A/9;LPR®Q)$BoD/&amp;.#
+&quot;&quot;=©    ÿúJÛ ,  &amp;54&gt;567627632#&amp;&#39;&amp;&quot;O$#!
+	÷22*-6.B0&gt;&quot;}Y(&amp;PZPþÅ &lt;Mbm1f0xJr¹     ÿÿ iF   7#&quot;&#39;&amp;4676562i&amp;Ì8z     	 v   &#39;46;&#39;&amp;&#39;&amp;&#39;47633276­C	;-bcKXF1G½-E\]Bi?&quot;,3E 9%T  +  aÐ 5  74&gt;7676303&gt;32+&quot;.&#39;&quot;+	.AyiV#@`q`@Sgo.h
+0T_xU4B]oto.d&amp;ô!MA+3785.%/5;&#39;.@EÈ    7 ´®   &#39;#&quot;&#39;%6PP	%	
+ýçµùý¶]      ,ª =  7&quot;&#39;&quot;54&gt;763632&quot;.&#39;4.&#39;&amp;&#39;{!	!,	+HL6$È &quot;  
+
+
+8j¸§I SbC  
+$¨x@\:Sdm4}@%&lt;KSL;&quot;)WÎ&gt;0þò!  ÿø`Ì $  &#39;&amp;&#39;.&#39;&quot;&amp;4&gt;764&#39;&gt;&gt;32`I73e*-/+#aþÐ4_¬DBYþõfF	-j;ßH?&gt;Ñ·ò@%      _    7&amp;467632#&quot;327654&#39;&amp;#&quot;./)WYd¢á
+îuIIWJqZED¨6q)U?H¦-ìFEpi70AA    &amp;ÿþ}f  ,  &#39;5&gt;7632#32&gt;765&amp;&#39;&amp;&quot;S-$$A®Kh99[r9f^+KTU&quot;Mh1CX&lt;éKtT9 dQ;&amp;à]2*AA,3    µz   C  74&gt;3632.&#39;&amp;&#39;&#39;&amp;2767&#39;&amp;=4626765&amp;&#39;&amp;&#39;&amp;&quot;#&quot;,V~RJCD+&amp;
+&amp;OÈ~Q2&lt;6·)1.-3a/T&gt;4)vô@pDNGtra		$?jEE#¦	 +.N\#$=
+:/SC9hY   .ÿô« / A  632+&quot;.&#39;&amp;&#39;+&quot;&#39;&amp;574&#39;6&#39;&quot;2&gt;7654v7Zz=¡=&lt;5§]0qB&quot;
+#WAâ&quot;
+)EN$qR5$(76	7
+Vb
+V@Iå VÉp),
+4+)3      ÿÿp` 3  &gt;73276764&#39;%&amp;&#39;&amp;5476767#&quot;.v]|X
+þablµ)¨S%.@3|´
+&gt;F|g=3\.j[:(*]E8=&quot;&quot;$&quot;4517&amp;$&quot;       ~D   &#39;&quot;&#39;&quot;&amp;4633767êY#.^Õ	IJ`&gt;IHBë&#39;&gt;Üî/
+     ÿþc 2  %#&quot;&amp;&#39;7#&quot;&#39;&amp;54767630363223276767632
+\*BE(
+ (&quot;/£3
+	O!«N»:00!1¡&gt;A%\&lt;;:8þ)     ÿür    %&amp;&#39;&amp;5476?67632&quot;53#=G-8RB#þä5H/mA95x­+**ý     ³ö 8  %62&#39;.&#39;.&#39;&amp;&#39;&#39;&amp;4676267632û2B?&quot;$$		F+.$\	&gt;ú	&quot;	!&amp;&amp;$	t6+f;¦¢®&#39;
+;jL³{	V%S8û,KB
+
+&amp;JRQ&quot;K	kÀ3/r      Ow !  %&quot;&amp;4?.&#39;476&quot;&#39;*-/4=¾4G.Àï:ð&quot;WL3áHD2á@Z:!	è/þã.A9:&#39;   ÿî   &quot;&#39;&amp;76?67&amp;4762&gt;#þõ%&#39;9;49O
+?Z+4	0¬cB§Yì    ÿýW   %# 547&amp;&quot;&quot;&amp;&#39;6%22&gt;7÷Ïþà
+°(3@28ß¥Â7¤J%â!
+N°Î)	   ÿ¬B   &gt;763%!O)g/D$X ÿþ°		 \°°]#5    ÿþîX   &amp;54463ºò¬
+:fgoB&quot;-96      ÿË3 )  #&quot;5632764&amp;&#39;&amp;&#39;&amp;&quot;#&quot;&#39;&amp;474&gt;?£(	:MX&#39;M2.m)&amp;=#a0	üGþÊþ_70§U­	 $	B    þ,¯   &amp;46767&#39;.&#39;)*&gt;3$%=þ
+&amp;$,!8*$      u   3&#39;567672!YÂÛ[þ«$	     /î h 
+  432&amp;&#39;./	CBLA+-      õÆ  0  %&quot;.&#39;&amp;5&amp;4&gt;767622#.&#39;&amp;&#39;4#&amp;#&quot;67676¤K}/&amp;%5&amp;O\-:
+;9IQ&amp;(DZR# ¦v	&amp;-JV$LO2³a(**º:F (9-;P#)7    +ç  .  &#39;46267632&amp;#&quot;&#39;&amp;52&gt;767&amp;#&quot;! ?kYC; %&lt;N(LJ6)
+V)&lt;U+d3A;Ji-DþPT90&amp;cIC:,_ÂÜ&#39;G`9,?]%&amp;
+     m¿ /  $62&quot;&amp;&#39;&amp;5&lt;&gt;76762.#26ØNG1GT(SFQ#Q&lt;(T\ +&quot;	vU`1%uVz*R$CC&lt;&amp; 29?@    	ÿÿô# ! 5   #&quot;=#&quot;&amp;&#39;&amp;4&gt;7632467&gt;763327276754#&amp;&quot;ô	/b&#39;Q$;*\k.*%þ^9	)&lt;r90&lt;=	Ã·¯ÅnN!j&amp;:2GL&gt;Z2/!ýzO-!#
+)7   	Ó ! /  7272&#39;&amp;&#39;&amp;4&gt;32#&#39;&quot; &amp;&quot;327654çX±(âbo!Pl=:H&quot;(9!H&amp;	0 HEP(o&#39;FP
+DL`@i^6(0=&quot;[E #
+      `&gt; &amp;  2&#39;4&#39;&quot;&#39;&amp;57&amp;4&gt;2&amp;&#39;&amp;#&quot;276Yþ©Q	$ENQJ4(9D&lt;9	&gt;MN6
+*ÞZt26¬×x)&quot;4A
+8,4Q*@  þQû¯ &amp; 9  &#39;&quot;#&quot;&#39;&amp;5765&lt;54&#39;#&quot;&#39;&quot;5&gt;7632&amp;&quot;2&gt;7654&lt;&quot;&amp;&lt;&quot;æj¢C2O2MHT6&quot;&amp;	+D&gt;B	(EJFþTo B;.og)?YîÈj&gt;$9#V3.@=%     ÿýñ &amp;  %&quot;54&#39;&amp;&#39;&amp;&quot;#64&amp;&#39;&amp;47632632ñ	K	H[;M
+	Z`#Kv,a7s9bP\5!¥].&lt;&#39;,4!r        #&quot;&amp;&#39;&#39;432&quot;&amp;u	*)  Ö»ö	¿#
+
+   ÿþ ­Ã &quot; -  #&quot;.&#39;&amp;&#39;4765327654&#39;&amp;47&amp;763*&#39;476­X	5A	!L+	?È§	*,*$$aé(	&gt;HMJ¡(     ÿûdÛ -  7&quot;&#39;4&amp;54;2&gt;7632#&amp;&#39;&amp;~&amp;&quot;	vH K	2o-Y%Cx8]	=eÇ¶WPvQ£Q &gt;XÃC	T31?M=!&#39;&amp;)  ÿÿ ª   .&#39;&gt;32#&#39;4.+	#
+@ºU)PþÙ««.4¢x     ÿýË ;  7&quot;&amp;&#39;4&gt;4&#39;4326762676325&amp;574&#39;#&quot;&amp;7654&amp;&#39;&quot;n)
++
+M)H7&#39;[SB_8BG6/!2!drt0 H(	/-%1&#39;%Hþ¡qB!1)\j;/U7s3Y?     &quot;ÿúãó (  %4&#39;6#&quot;#&amp;5467632632#.&#39;.5¡ &quot;l&quot;Q	C¢Ye
+
+Ûw8&quot;&#39;%þð&quot;	;+w£9eO,)(S#     4ÿÿ0Á  #  74767:#&quot;&amp;7267654&#39;&amp;#4fQr,%R_X_aE!vZ#K #9&#39;O#L¾vH9G&#39;}HBXO&gt;0e&lt;&amp;)1  &gt;þ!À  ,  632#&quot;#6&amp;&quot;67654{c~*?4y­ 	(!K%T(ÎV2/B$2j+c1&lt;DM$57&amp;­.R/25  $þô  &#39;  ##&quot;.54&gt;;24#&quot;:6765å&#39;OH9.=8h};0deQV61FBþµ%&quot;
+:nX.*®þ®®/;Aa0%K    ÿõ&quot;â )  &amp;#&quot;&quot;&amp;&#39;.&#39;&amp;&#39;43263262*B&gt;5d%	#Ä	m*B&quot;7]08P_.d/#-,	v2  ÿãßÊ (  2&quot;.&#39;6764&quot;&amp;&#39;&amp;4&gt;76322&amp;#&quot;376qn=[	sJ2vr4&amp;!$&lt;(bi;J\&lt;&gt;)I^8*8S2&amp;6$.#?5./*0%$:  ÿñ¨   ?4&#39;#&#39;36762630327&#39;#&quot;²	  42` &amp;E		B! Hþ§  ÿÿé¹ .  74.47633276764.&#39;62#&quot;&#39;&quot;.)	!^1,T	(BZ*?89DFA#WFC*.E6A&#39;Haha#P$:   &quot;ÿþæ   &amp;4&gt;&gt;7632&quot;&amp;&#39;&amp;$
+¨#-10	8_(4!:þÈARY%UzÎ=?5`   .ÿëÇ 5  #&quot;&#39;&amp;&#39;&amp;5466?6762&gt;7632&#39;.&#39;&amp;.TR&quot;
+*)( }5	!+!&amp;&amp;3I|);1¨¤)	
+
+&gt;iW&quot;6VqÁRxS$T&quot;W[Y$N/&lt; P   ÿýßà /  7&gt;7&#39;./767672.&#39;&#39;&amp;1dT:-+*$&lt;$1	=U).1)K#	1~\&quot;	&gt;79)4Y+ 8&gt;)+g	/881Z  þX ×    #&quot;&amp;7&gt;7&amp;&#39;&amp;54?&gt;767632îS#K&amp;O &quot;&lt;	
+þ/]î)#iØ&amp;I¯,*=%S    ÿüô± .  &quot;54&gt;767*&quot;5462&gt;767372&amp;&quot;dXBG-	$E&amp;g@&#39;	)#E0F&gt;&#39;¤&amp;&gt;6X&gt;U,Z9A7%G&gt;~	
+    4ÿv³ò 3   232&amp;&#39;.&#39;.&#39;&amp;&#39;&gt;7&amp;&#39;&amp;46763&amp;
+&amp;2		!//)
+¨+
+&amp;9	 %$
+*j) 4]q&#39; ;MYL#H}?..*%)&amp;0&lt;`Y&amp;T6  4ÿº oÔ   #&quot;3g;Dûê   ÿ&amp;© 5  &#39;6267654&#39;:76764&#39;4.64.&#39;52
++0E
+5	!&#39; **&amp;n?0	
+(* ?,9ÚH1 .;*6Zt[26R&gt;t5g!&quot;21-[UJ=     æ°   &quot;&quot;&amp;&#39;&gt;7622&gt;72#&quot;&#39;. 6&lt;!$&amp;+3@.7Q0J&amp;&quot;&amp;%2  ÿÿ ÿO }ßG  Ù?XÑä    ÿºm: - 9  #&quot;&#39;&quot;&amp;&#39;&amp;5&amp;5476753632&amp;&#39;&amp;&gt;762&#39;27Z2Q#QQQq;#Y&quot;		2&lt;DO;&#39;L]d(1%DJ*RJLM&quot;}?-þÚ	!P!8F@ ÿê  W =  7&quot;54&gt;7&gt;7632&quot;&#39;&amp;&#39;&amp;&quot;2&gt;2&amp;&#39;&amp;&quot;#&quot;#673.&quot;O;H_-##+8&lt;32S)o(&lt;3/*V+7I+I
+ö
+?\?&amp;
+.&lt;&amp;#/,|	ÀC·    ÿÿÿûXD 4 E  %#&quot;&#39;&quot;&amp;&#39;&amp;&#39;7&amp;47&#39;767:&gt;72.%267654&#39;&amp;#ÃU-&quot;-
+
+W(@PH4EZ-#
+)!-)/(1þ!uZ#K #9&#39;O&quot;Mo=	$	
+K,º@OC8&quot;%	0#%2;M?,0		/}&gt;0e;&amp;)3   ÿöÿîõÆ H  7675&quot;&#39;&amp;&#39;76?&amp;4676367&gt;&gt;76672&#39;&amp;&#39;67#&quot;546y]/oþõ!eR0(5(		e:&gt;RIK;º+$-
+#xð)&quot;L*kH
+-¢|#      n6    7367&amp;62Bÿ 9ueê     
+ î¿ 6 E  2&quot;&#39;&amp;&#39;6764&quot;&amp;&#39;&amp;547.54767622&amp;#&quot;3764#&quot;327676}qA#0?1@0o	]Hwl4&amp;!b!%Bd-;J:IYD/&amp;[#O	(]EJ÷7,:&#39;A&gt;$-#&#39;##C:433L*0N
+Z 06-/   BU) 
+   &quot;54723&quot;5472Z2	s3$*U&quot;&quot;&quot;  &amp;ÿþgg  % P  7.4&gt;7632#&quot;&#39;3265454&amp;#*#&quot;7454&gt;32.#2&gt;2&quot;&amp;&#39;&amp;t$*%5&quot;K_D?_]YWÀrc541# C(DI
+A37D1.-)00&#39;./,EPn^X&quot;I^U~SP¹szHBg^*YI&amp;6	.27&amp;%
+%ÿÿ 
+  àsF D|,&quot;°  T ;ê  4  7&gt;7672#.&#39;&amp;7&gt;767#.&#39;&amp;T V,l/ë8&quot;Q=	pDDØ U-i1ë7&quot;\3	pCDåD&quot;U	³((&#39;&quot;;E#Q³.!&#39;&quot;     I xK`   &quot;&#39;&amp;5772?62K		þG=&lt;RwU7!#J*hA    &amp;ÿþgg  K [  7.4&gt;7632#&quot;&#39;327+&quot;&amp;&#39;&amp;&#39;#&quot;&amp;574&#39;663265454&amp;#*#&quot;%&quot;267&gt;4&#39;t$*%5&quot;K_D?_]YWÀF
+	7$^/J-%;`kY}
+&amp;rc541# n	
+#=2,EPn^X&quot;I^U~SP¹_&quot;&lt;n) q/4#
+#,C@`szHBg^Â		  +c   &quot;54&gt;72P29W0*	
+	    Åµ    &amp;47632#&quot;7&amp;#&quot;2764+&#39;4)*B
+,6!*3!d
+!     ÿûõ 2  &quot;54&gt;7.&#39;&amp;&#39;&quot;&quot;&amp;5754327672z3J,	%KÀ#
+»&quot;MIQF)	
+4;&#39;(¦&amp;*&amp;
+D
+	 ÿÿ 	 ¯eÞG    ª&#39;ú!£  ÿÿ  ª0îG   ¬&amp;C$Å    ò p 
+  632&#39;^
+
+	4]+    !ÿÊ¾ 9  7432267654&amp;4767&quot;&#39;&amp;54#&quot;&#39;&amp;&#39;&quot;&#39;64&amp;&#39;&amp;!+A/X0,?&lt;93âÜ&amp;?8&#39;&#39;(%.0kZ;g	%#
+X?..    ÿÿmâ   &#39;&quot;&quot;&#39;&amp;76767&amp;&#39;&amp;4762&#39;&quot;549	]5NF1V(¨þ /` 1nþ8 f      È f   7&gt;2&quot;&amp;&#39;&amp;ð    +ÿ õ  %  7432362#&quot;&#39;&quot;4&gt;&#39;2&gt;76&#39;&amp;&quot;&quot;5&amp;/3(/)5 408* &quot;*
+%( 
+
+	l	ÿÿ   [µG   1´!M  ÿÿ   G R   .!è    2 0Ù  &#39;  7&amp;&#39;4547&gt;7%7&amp;7&gt;767%7v-Gi@þø21SML)OWUÄXA!_;þ÷21SNK*OWU0*=1c1#?BD&quot;36&amp;c1#?BD ÿÿ ÿø©g  + -[&amp; øøF z&amp;ß$E  ÿÿ   ±g   1?&amp;  G  · 	(U%âÿÿ 	ÿìËg   -&#39;o&#39;  µÿìG  *()  ÿÿÿâ }ÚG &quot;ÕÊ;¾ý  ÿÿ ÿìyc&amp; $ûû C Î ûÿÿ ÿñ~o&amp; $   t µ ÿÿÿ ÿñ~U&amp; $  :  ¦ÿÿ ÿñ~u&amp; $  @ j çÿÿ ÿñ~/&amp; $   i  ÿÿ ÿñ~C&amp; $  &gt; ¬ ø    t¨ &lt; G  &#39;&quot;276327635&amp;/.4&gt;767676323274&#39;2767&amp;ÛE.H=x@þËsGV!oÜa °	$$-6. h8*þd},5/
+X22*6&amp;¤	ò5G&quot;
+Mgs6*.*2Ì80·e  ÿÿ ÿÀ&amp; &amp;   x Ý ÿÿ   J&amp; (   C  ´ÿÿ   J&#39;&amp; (   t » ·ÿÿ   JU&amp; (  : } ¦ÿÿ   Jä&amp; (   idL  ÿÿ ÿÿ pù&amp; ,   CÿÙ ÿÿ ÿÿ Ú&amp; ,   tój  ÿÿÿÇÿÿ á&amp; ,  :µd  ÿÿÿÑÿÿ ¸·&amp; ,   i    
+ ¢  3  7&quot;54&gt;732632#&quot;&#39;5672276765&amp;&#39;&amp;&quot;&lt;2JzàS!C\f4zWT!#*_Fi¶DYCÐÂ
+	n*A,NPG&lt;5´bþâ	3Zw**Z*    ÿÿ ÿø`&amp; 1  @ ` üÿÿ  &amp; 2   C ë ÿÿ  &amp; 2   t	 ÿÿ  &amp; 2  : º jÿÿ  &amp; 2  @  ÿÿ  É&amp; 2   i ¢ 1  L I© )  7&quot;&amp;&#39;&gt;7.57&gt;7672.&#39;&amp;ù`+A#1&amp;*!
+
+0.:+Ñs+S&amp;8).(*%.!)=!I	
+&quot;6   ÿÿ ÿß&amp; 2   Zß  ÿÿ ÿþÓ&amp; 8   C ´ kÿÿ ÿþþ&amp; 8   t ß ÿÿ ÿþ.&amp; 8  :  ÿÿ ÿþÏ&amp; 8   it7  ÿÿ ÿî&amp; &lt;   t ã ¢  ! øÏ  .  7#&#39;&amp;&#39;&amp;46267632&quot;&#39;7326767&amp;#&quot;j
+?^B5&gt;&amp;?)TX&#39;&quot;Z%X2C/1a&#39;ùS1#1 cMF;P&#39;?_?9X#/   Iÿo¤£ 2  &quot;#64.=47&gt;2&#39;&gt;54&#39;&amp;#&quot;&#39;654&#39;&amp;#ßR
+D	 WJ_r;wwçU.JS&gt;?s=0Dv;JñU9AgýFÃ½Æ)3&amp;8,Y)6(67&gt;*
+N8:%!	i2C/   ÿÿ  õh&amp; D   C £  ÿÿ  õp&amp; D   t °  ÿÿ  õ¯&amp; D  :`   ÿÿ  õ&amp; D  @   ÿÿ  õ&amp; D   iN   ÿÿ  õ&quot;&amp; D  &gt; ÿ×ÿÿ ÿö«Æ&amp; D   H¢ÿðÿÿ ÿm¿&amp; F   x   ÿÿ  	h&amp; H   C ³  ÿÿ  	p&amp; H   t À  ÿÿ  	¯&amp; H  :q   ÿÿ  	&amp; H   i_        	   7&quot;&amp;&#39;3432&amp;&#39;.?f	CB%	¿»eA+-    !      #&quot;&amp;&#39;7632&#39;u	*0
+
+	4Ö»ö	¿©+    ÿ¼  Ö¯     #&quot;&amp;&#39;.46767&#39;.&#39;u	*c*&gt;3$%=Ö»ö	¿(
+&amp;$,!8*$  ÿÚ  Á     #&quot;&amp;&#39;&#39;&quot;54723&quot;5472u	*D2	s3$*Ö»ö	¿&quot;&quot;&quot;   3 )n &amp; 2  &quot;.&#39;&amp;&#39;&amp;47&gt;2&amp;&#39;&#39;7&amp;&#39;467736764&#39;&amp;&quot;ã:G 1$&lt;U&#39;T&#39;T28o=0O)D+M&gt;&#39;&amp;I*þiE8_:f¨ÒsqwA&amp;;;	(IE-B&quot;D &amp;41þãT*!)3( ÿÿ &quot;ÿúãÈ&amp; Q  @&quot;:  ÿÿ 4ÿÿ0h&amp; R   C ¾  ÿÿ 4ÿÿ0p&amp; R   t Ë  ÿÿ 4ÿÿ0¯&amp; R  :|   ÿÿ 4ÿÿ0&amp; R  @8   ÿÿ 4ÿÿ0&amp; R   ij   ÿÿ : oG{&amp; ^
+[   ÿÿ 4ÿÚ0&amp; R  F \Ú8&quot;3  ÿÿ ÿÿéh&amp; X   C ¢  ÿÿ ÿÿép&amp; X   t ¯  ÿÿ ÿÿé¯&amp; X  :`   ÿÿ ÿÿé&amp; X   iN   ÿÿ þX p&amp; \   t Ä    ÿqþO  +  7&quot;&#39;62632&amp;&quot;67654r`~*&lt;3u©&quot;K%T(ÌW0/Ô	(&lt;!-[&amp;UW7&amp;y.E&#39;&#39;+ÿÿ þX &amp; \   ic   ÿÿ ÿñ~&amp; $   o  ºÿÿ  õc&amp; D   oU   ÿÿ !ÿñO&amp; $ &lt; ÿÿ  õ&gt;&amp; D  &lt;   ÿÿ ÿJº&amp; $  ?¾ ÿÿ ÿQÆ&amp; D  ?&gt; 
+ÿÿ ÿÿÀ5&amp; &amp;   t í Åÿÿ   mp&amp; F   t ï  ÿÿ ÿÿÀ&amp; &amp;  : « Úÿÿ   m¯&amp; F  :    ÿÿ ÿÿÀ&amp; &amp;  = òÿÿ   m(&amp; F  = ö  ÿÿ ÿÿÀA&amp; &amp;  ; ³ÿÿ   mS&amp; F  ;  ÿÿ &amp; )&amp; &#39;  ;  ëÿÿ   Jã&amp; (   o n ÿÿ  	c&amp; H   of   ÿÿ   J&amp; (  &lt; ® Èÿÿ  	Z&amp; H  &lt;  ÿÿ   Jô&amp; (  = Â Ìÿÿ  	N&amp; H  = Ç &amp;ÿÿ ÿpJ~&amp; (  ?` )ÿÿ ÿJ	Ó&amp; H  ?  ÿÿ   J!&amp; (  ;  ãÿÿ  	q&amp; H  ;o3  ÿÿ ÿÀ®t&amp; *  : É Åÿÿ þQû¯&amp; J  :d   ÿÿ ÿÀ®&amp; *  &lt; Ø Òÿÿ þQû&gt;&amp; J  &lt;   ÿÿ ÿÀ®&amp; *  = ç Ýÿÿ þQû(&amp; J  = º  ÿÿ ÿ®&amp; *  ^   ÿÿ þQûk&amp; J  L ¦  ÿÿ ÿúJÍ&amp; +  : oÿÿ ÿýñ&amp; K  :yn  ÿÿ ÿúJÛ&amp; +  F oì¯GA  ÿÿÿñÿýñ&amp; K   oÓ  ÿÿÿÿÿ
+&amp; ,  @ÿy | ÿ °  &#39;  #&quot;&amp;&#39;&#39;&quot;&quot;&amp;&#39;&gt;7622&gt;72#&quot;&#39;.u	*8 6&lt;!$&amp;+,&gt;.Ö»ö	¿Q0J&amp;&quot;&amp;$/    ÿ¼  Éc    #&quot;&amp;&#39;&#39;&quot;54&gt;72u	*H29W0*	Ö»ö	¿@
+	  ÿÿÿßÿÿ  Ò&amp; ,  &lt;ÿÀ ÿÿÿÕÿM F&amp; ,  ?¯  ÿÿÿôÿU ¨&amp; L  ?Î  ÿÿ ÿÿ yÄ&amp; ,  =     6  Ö   #&quot;&amp;&#39;u	*Ö»ö	¿ÿÿ 	 &amp; -  : | Ý ÿþ Ù¯ &quot; :  #&quot;.&#39;&amp;&#39;465327654&amp;&#39;&amp;47&amp;763&amp;46767&#39;.&#39;£X	5A!L+	Í*&gt;3$
+%=È§	*,*$$U¡P¥y(	&gt;HMJ¡c
+&amp;$,!8*$ ÿÿ +ÿaÐ&amp; .  ^r   ÿÿ ÿdÛ&amp; N  ^v   ÿÿ 7 ´X&amp; /   t èÿÿ ÿÿ &lt;&amp; O   tÿ÷ Ìÿÿ 7ÿ´®&amp; /  ^   ÿÿ ÿ ª&amp; O  ^   ÿÿ 7 ´®&amp; /  M   ÿÿ 7 ´®&amp; /   w(  ÿÿ ÿÿª&amp; O   w ¡  ÿÿ 	 ´®&amp; /  Jë  ÿÿÿÁÿÿ Îª&amp; O  J£   ÿÿ ÿø`e&amp; 1   t ð õÿÿ &quot;ÿúãp&amp; Q   t «  ÿÿ ÿ`Ì&amp; 1  ^}   ÿÿ &quot;ÿãó&amp; Q  ^;   ÿÿ ÿø`q&amp; 1  ; ©3ÿÿ &quot;ÿúã&amp; Q  ;hB  ÿÿ &quot;ÿúã&amp; Q  ^ÿ°Kÿÿ  Ù&amp; 2   o ¨ vÿÿ 4ÿÿ0c&amp; R   oq   ÿÿ  õ&amp; 2  &lt; Ì ·ÿÿ 4ÿÿ0&gt;&amp; R  &lt;   ÿÿ  &amp; 2  A ¾ ÿÿ 4ÿÿ0&amp; R  A     ÿò4{ 0 @  22&gt;32763&#39;5&quot;&amp;&#39;&amp;54&gt;3273276?&amp;&#39;&amp;&quot;WU$d¹?=¶`2þu_¯W
+~þ-Mgr*X1UqAtIRþ&#39;&lt;æ0WTTn2N&lt;&#39;460¤	&quot;
+X9&#39;&#39;SEz[6mc¥[i`&quot;H^Äu#,  ÿêÞ 1 D K  74767232676:327672#&quot;&amp;&#39;#&quot;&amp;$&gt;754&#39;&amp;#26&amp;#&quot;fQr2B&lt;m!&amp; L%!UY*]g9;HM
+$bLLG`&lt;¥_ah&#39;O#L!sEº5&amp;9©vH9.)b	-	.+[#&gt;%/$pX66A?2&gt;	H$#ÿÿ .ÿô«.&amp; 5   t Ð ¾ÿÿ ÿõ&quot;p&amp; U   t Æ  ÿÿ .ÿ«&amp; 5  ^ ©  ÿÿ ÿ&quot;â&amp; U  ^V   ÿÿ .ÿô«)&amp; 5  ;  ëÿÿ ÿõ&quot;y&amp; U  ;  ;ÿÿ ÿÿpÛ&amp; 6   t õ kÿÿ ÿãßp&amp; V   t ­  ÿÿ ÿÿp=&amp; 6  :  ÿÿ ÿãß¯&amp; V  :]   ÿÿ ÿp`&amp; 6   x Æ  ÿÿ ÿßÊ&amp; V   x ¶ ÿÿ ÿÿpÙ&amp; 6  ;  ÿÿ ÿãßS&amp; V  ;f  ÿÿ  ÿ~D&amp; 7  ^  ÿÿ ÿ¨&amp; W  ^
+   ÿÿ    ~ç&amp; 7  ;  ©ÿÿ    ~D&amp; 7   o iÿ6ÿÿÿõÿñ¨&amp; W  G oÿÈýèa;MÚÿÿ ÿþ#&amp; 8  @ B ÿÿ ÿÿé&amp; X  @   ÿÿ ÿþ¹&amp; 8   owV  ÿÿ ÿÿéc&amp; X   oU   ÿÿ ÿþ¾&amp; 8  &lt;  ÿÿ ÿÿé&gt;&amp; X  &lt;   ÿÿ ÿþþ&amp; 8  &gt; ¦ ³ÿÿ ÿÿéK&amp; X  &gt;   ÿÿ ÿþ&amp; 8  A © ÿÿ ÿÿé&amp; X  Au   ÿÿ ÿ`$c&amp; 8  ?J ÿÿ ÿc¹&amp; X  ?3 ÿÿ   ³p&amp; :  :&gt; Áÿÿ .ÿë¯&amp; Z  : ú  ÿÿ ÿîU&amp; &lt;  : n ¦ÿÿ þX ¯&amp; \  :u   ÿÿ ÿî¾&amp; &lt;   iX&amp;  ÿÿ ÿý&amp; =   t&quot; ÿÿ ÿüôp&amp; ]   t ©  ÿÿ ÿýÛ&amp; =  = õ ³ÿÿ ÿüô(&amp; ]  = °  ÿÿ ÿý&amp; =  ; ¹ Öÿÿ ÿüô&gt;&amp; ]  ;b     þ^`&gt; +  2?4&amp;&#39;&amp;&#39;&quot;&#39;&amp;57&amp;4&gt;2&amp;&#39;&amp;#&quot;276Yþ©Ü	$ENQJ4(9D&lt;9	&gt;MN6
+*ýUYö7x$26¬×x)&quot;4A
+8,4Q*@ÿÿ ÿús×&amp; ÿúG t? é62ÿÿ ÿö«p&amp; D  &#39; H¢ÿð t  ÿÿ   &amp; 2  &amp; ]  t î   ÿÿ 4ÿÒ0p&amp; R  f ^Ò6²3\ t Ë    ÿÿ ÿp`&amp; 6  ^ ©  ÿÿ ÿßÊ&amp; V  ^=     þ,¯   &amp;46767&#39;.&#39;)*&gt;3$%=þ
+&amp;$,!8*$  Ç&gt;   &amp;463&gt;76&amp;1!%)3
+
+	%   Ú à&gt;   4632&gt;762#&quot; %
+	6,+ 
+	+     &quot;× y(   &gt;2&quot;&amp;&#39;&amp;&quot;ÿ   ¥ ËK    &amp;47632#&quot;7&amp;#&quot;327&lt;1(/*(B#Ã5!.2!d   &amp;ÿG Ú &quot;   #&quot;&#39;&amp;5467&quot;#&quot;27Ï.7!$G 5­-&lt;1     æ¦   &quot;&quot;&amp;&#39;&gt;7622&gt;72#&quot;&#39;. 6&lt;!$&amp;+,&gt;.7Q0J&amp;&quot;&amp;$/    ,þ ò 
+   632&#39;7&#39;762a
+)%Æ
+-$4#y	5R:Zÿÿ   ³H&amp; :   C àÿÿ .ÿëh&amp; Z   C=  ÿÿ   ³W&amp; :   t çÿÿ .ÿëp&amp; Z   tJ  ÿÿ   ³c&amp; :   i% Ëÿÿ .ÿë&amp; Z   i è  ÿÿ ÿî0&amp; &lt;   C Å Èÿÿ þX h&amp; \   C ·     Ø+&amp;   7&quot;54&gt;72P29W0	Ø
+
+   Ø%   7&quot;54&gt;72P2&quot;HMI	Ø
+
+  ¶ k 	  276h&quot;
+	08k#)C°    ¶ k 	  276h&quot;
+	08k#)C°    # 
+  ¿ 	  7276p&quot;
+	08¿#)C°     6ê ×û    7&#39;47#&quot;&#39;7&#39;47#&quot;$$\$$R)SÇ&quot;W*SÇ&quot;     6ê ×û    7&#39;47#&quot;&#39;7&#39;47#&quot;$$\$$R)SÇ&quot;W*SÇ&quot;     U  þ-    ?&#39;47#&quot;&#39;7&#39;47#&quot;¹$$d$$(RÇ&quot;d*QÇ!  ÿýX   3+&quot;&quot;&#39;&amp;547&gt;73672å$;*/&#39;
+P	K9xþò
+
+     ÿýX -  3+&quot;.67675&quot;&#39;&amp;547&gt;73672&gt;76å$H `;*/&#39;
+P	K9x!A		5þò
+
+2
+     ! Â ¥A   &gt;32&quot;&amp;&#39;&amp;!%!((%(%    ÿÿ B 
+    74672&quot;74672&quot;3&quot;54?2$	2$	2¨$&quot;##!&quot;  T ;¯Ó   7&gt;7672#.&#39;&amp;T V,l/ë8&quot;Q=	pDDåD&quot;U	³((&#39;&quot;   2 0ª½   7&amp;&#39;4547&gt;7%7v-Gi@þø21SML)OWU0*=1c1#?BD     Åµ   3&quot;=4676362&#39;ÇsN	%:FO&amp;O 
+$5±dQjx}9w    ÿþ	 O  7&quot;546367547&quot;&#39;&amp;&#39;7&gt;767632&amp;&quot;&gt;76&gt;7672&quot;367672#&quot;.&#39;&amp;&#39;;)%,!%cfEEnO&amp;M 		°*2;&quot;PXuL%BGP´e;T$J¯#$RUD&#39;8c=	
+&quot;A&gt;	-G41Q   ÿ¼Êe T  &#39;&quot;&#39;&quot;&amp;46327&gt;2632&quot;./&amp;&#39;4.&#39;&amp;&#39;#&quot;.&gt;ø_)0^Õ	&lt;&lt;Á}.F8.&amp;&quot;È;	  		5m¯!
+
+ë&#39;&gt;Üî1M^YI\¸;j¿:%&lt;LS%D!(QÕ&gt;s:×0G&quot;+P\c\O   Ø+&amp;   7&quot;54&gt;72P29W0	Ø
+
+ÿÿ ÿé&gt;&amp; I   L
+ÿãÿÿ  &gt;&amp; I   O   {ÿÿÂ   &gt;2#&quot;&#39;Â7
+	OU   ÿÿÿÁÿÿ Îê&amp; ,   oÿ£    &amp;        : v        Ù        ý       A              Á       ú       /      	 b       ©      8%6       6§  	   t    	  &amp; ±  	   í  	  :  	  &amp;_  	  $  	  $Ô  	     	 	  @  	  4s  	 &quot;pÄ  	  66o C o p y r i g h t   ( c )   2 0 1 0 ,   K i m b e r l y   G e s w e i n   ( k i m b e r l y g e s w e i n . c o m )  Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com)  A r c h i t e c t s   D a u g h t e r  Architects Daughter  R e g u l a r  Regular  1 . 0 0 2 ; p y r s ; A r c h i t e c t s D a u g h t e r  1.002;pyrs;ArchitectsDaughter  A r c h i t e c t s   D a u g h t e r  Architects Daughter  V e r s i o n   1 . 0 0 2   2 0 1 0  Version 1.002 2010  A r c h i t e c t s D a u g h t e r  ArchitectsDaughter  K i m b e r l y   G e s w e i n  Kimberly Geswein  K i m b e r l y   G e s w e i n  Kimberly Geswein  h t t p : / / k i m b e r l y g e s w e i n . c o m  http://kimberlygeswein.com  C o p y r i g h t   ( c )   2 0 1 0 ,   K i m b e r l y   G e s w e i n   ( k i m b e r l y g e s w e i n . c o m )  
+  
+ T h i s   F o n t   S o f t w a r e   i s   l i c e n s e d   u n d e r   t h e   S I L   O p e n   F o n t   L i c e n s e ,   V e r s i o n   1 . 1 .     T h i s   l i c e n s e   i s   c o p i e d   b e l o w ,   a n d   i s   a l s o   a v a i l a b l e   w i t h   a   F A Q   a t :     h t t p : / / s c r i p t s . s i l . o r g / O F L  
+  
+  
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+ S I L   O P E N   F O N T   L I C E N S E   V e r s i o n   1 . 1   -   2 6   F e b r u a r y   2 0 0 7  
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  
+ P R E A M B L E  
+ T h e   g o a l s   o f   t h e   O p e n   F o n t   L i c e n s e   ( O F L )   a r e   t o   s t i m u l a t e   w o r l d w i d e   d e v e l o p m e n t   o f   c o l l a b o r a t i v e   f o n t   p r o j e c t s ,   t o   s u p p o r t   t h e   f o n t   c r e a t i o n   e f f o r t s   o f   a c a d e m i c   a n d   l i n g u i s t i c   c o m m u n i t i e s ,   a n d   t o   p r o v i d e   a   f r e e   a n d   o p e n   f r a m e w o r k   i n   w h i c h   f o n t s   m a y   b e   s h a r e d   a n d   i m p r o v e d   i n   p a r t n e r s h i p  
+ w i t h   o t h e r s .  
+  
+ T h e   O F L   a l l o w s   t h e   l i c e n s e d   f o n t s   t o   b e   u s e d ,   s t u d i e d ,   m o d i f i e d   a n d   r e d i s t r i b u t e d   f r e e l y   a s   l o n g   a s   t h e y   a r e   n o t   s o l d   b y   t h e m s e l v e s .   T h e   f o n t s ,   i n c l u d i n g   a n y   d e r i v a t i v e   w o r k s ,   c a n   b e   b u n d l e d ,   e m b e d d e d ,   r e d i s t r i b u t e d   a n d / o r   s o l d   w i t h   a n y   s o f t w a r e   p r o v i d e d   t h a t   a n y   r e s e r v e d   n a m e s   a r e   n o t   u s e d   b y   d e r i v a t i v e   w o r k s .   T h e   f o n t s   a n d   d e r i v a t i v e s ,   h o w e v e r ,   c a n n o t   b e   r e l e a s e d   u n d e r   a n y   o t h e r   t y p e   o f   l i c e n s e .   T h e   r e q u i r e m e n t   f o r   f o n t s   t o   r e m a i n   u n d e r   t h i s   l i c e n s e   d o e s   n o t   a p p l y   t o   a n y   d o c u m e n t   c r e a t e d   u s i n g   t h e   f o n t s   o r   t h e i r   d e r i v a t i v e s .  
+  
+ D E F I N I T I O N S  
+ &quot; F o n t   S o f t w a r e &quot;   r e f e r s   t o   t h e   s e t   o f   f i l e s   r e l e a s e d   b y   t h e   C o p y r i g h t   H o l d e r ( s )   u n d e r   t h i s   l i c e n s e   a n d   c l e a r l y   m a r k e d   a s   s u c h .   T h i s   m a y   i n c l u d e   s o u r c e   f i l e s ,   b u i l d   s c r i p t s   a n d   d o c u m e n t a t i o n .  
+  
+ &quot; R e s e r v e d   F o n t   N a m e &quot;   r e f e r s   t o   a n y   n a m e s   s p e c i f i e d   a s   s u c h   a f t e r   t h e   c o p y r i g h t   s t a t e m e n t ( s ) .  
+  
+ &quot; O r i g i n a l   V e r s i o n &quot;   r e f e r s   t o   t h e   c o l l e c t i o n   o f   F o n t   S o f t w a r e   c o m p o n e n t s   a s   d i s t r i b u t e d   b y   t h e   C o p y r i g h t   H o l d e r ( s ) .  
+  
+ &quot; M o d i f i e d   V e r s i o n &quot;   r e f e r s   t o   a n y   d e r i v a t i v e   m a d e   b y   a d d i n g   t o ,   d e l e t i n g ,   o r   s u b s t i t u t i n g   - -   i n   p a r t   o r   i n   w h o l e   - -   a n y   o f   t h e   c o m p o n e n t s   o f   t h e   O r i g i n a l   V e r s i o n ,   b y   c h a n g i n g   f o r m a t s   o r   b y   p o r t i n g   t h e   F o n t   S o f t w a r e   t o   a   n e w   e n v i r o n m e n t .  
+  
+ &quot; A u t h o r &quot;   r e f e r s   t o   a n y   d e s i g n e r ,   e n g i n e e r ,   p r o g r a m m e r ,   t e c h n i c a l   w r i t e r   o r   o t h e r   p e r s o n   w h o   c o n t r i b u t e d   t o   t h e   F o n t   S o f t w a r e .  
+  
+ P E R M I S S I O N   &amp;   C O N D I T I O N S  
+ P e r m i s s i o n   i s   h e r e b y   g r a n t e d ,   f r e e   o f   c h a r g e ,   t o   a n y   p e r s o n   o b t a i n i n g   a   c o p y   o f   t h e   F o n t   S o f t w a r e ,   t o   u s e ,   s t u d y ,   c o p y ,   m e r g e ,   e m b e d ,   m o d i f y ,   r e d i s t r i b u t e ,   a n d   s e l l   m o d i f i e d   a n d   u n m o d i f i e d   c o p i e s   o f   t h e   F o n t   S o f t w a r e ,   s u b j e c t   t o   t h e   f o l l o w i n g   c o n d i t i o n s :  
+  
+ 1 )   N e i t h e r   t h e   F o n t   S o f t w a r e   n o r   a n y   o f   i t s   i n d i v i d u a l   c o m p o n e n t s ,   i n   O r i g i n a l   o r   M o d i f i e d   V e r s i o n s ,   m a y   b e   s o l d   b y   i t s e l f .  
+  
+ 2 )   O r i g i n a l   o r   M o d i f i e d   V e r s i o n s   o f   t h e   F o n t   S o f t w a r e   m a y   b e   b u n d l e d ,   r e d i s t r i b u t e d   a n d / o r   s o l d   w i t h   a n y   s o f t w a r e ,   p r o v i d e d   t h a t   e a c h   c o p y   c o n t a i n s   t h e   a b o v e   c o p y r i g h t   n o t i c e   a n d   t h i s   l i c e n s e .   T h e s e   c a n   b e   i n c l u d e d   e i t h e r   a s   s t a n d - a l o n e   t e x t   f i l e s ,   h u m a n - r e a d a b l e   h e a d e r s   o r   i n   t h e   a p p r o p r i a t e   m a c h i n e - r e a d a b l e   m e t a d a t a   f i e l d s   w i t h i n   t e x t   o r   b i n a r y   f i l e s   a s   l o n g   a s   t h o s e   f i e l d s   c a n   b e   e a s i l y   v i e w e d   b y   t h e   u s e r .  
+  
+ 3 )   N o   M o d i f i e d   V e r s i o n   o f   t h e   F o n t   S o f t w a r e   m a y   u s e   t h e   R e s e r v e d   F o n t   N a m e ( s )   u n l e s s   e x p l i c i t   w r i t t e n   p e r m i s s i o n   i s   g r a n t e d   b y   t h e   c o r r e s p o n d i n g   C o p y r i g h t   H o l d e r .   T h i s   r e s t r i c t i o n   o n l y   a p p l i e s   t o   t h e   p r i m a r y   f o n t   n a m e   a s  
+ p r e s e n t e d   t o   t h e   u s e r s .  
+  
+ 4 )   T h e   n a m e ( s )   o f   t h e   C o p y r i g h t   H o l d e r ( s )   o r   t h e   A u t h o r ( s )   o f   t h e   F o n t   S o f t w a r e   s h a l l   n o t   b e   u s e d   t o   p r o m o t e ,   e n d o r s e   o r   a d v e r t i s e   a n y   M o d i f i e d   V e r s i o n ,   e x c e p t   t o   a c k n o w l e d g e   t h e   c o n t r i b u t i o n ( s )   o f   t h e   C o p y r i g h t   H o l d e r ( s )   a n d   t h e   A u t h o r ( s )   o r   w i t h   t h e i r   e x p l i c i t   w r i t t e n  
+ p e r m i s s i o n .  
+  
+ 5 )   T h e   F o n t   S o f t w a r e ,   m o d i f i e d   o r   u n m o d i f i e d ,   i n   p a r t   o r   i n   w h o l e ,   m u s t   b e   d i s t r i b u t e d   e n t i r e l y   u n d e r   t h i s   l i c e n s e ,   a n d   m u s t   n o t   b e   d i s t r i b u t e d   u n d e r   a n y   o t h e r   l i c e n s e .   T h e   r e q u i r e m e n t   f o r   f o n t s   t o   r e m a i n   u n d e r   t h i s   l i c e n s e   d o e s   n o t   a p p l y   t o   a n y   d o c u m e n t   c r e a t e d   u s i n g   t h e   F o n t   S o f t w a r e .  
+  
+ T E R M I N A T I O N  
+ T h i s   l i c e n s e   b e c o m e s   n u l l   a n d   v o i d   i f   a n y   o f   t h e   a b o v e   c o n d i t i o n s   a r e   n o t   m e t .  
+  
+ D I S C L A I M E R  
+ T H E   F O N T   S O F T W A R E   I S   P R O V I D E D   &quot; A S   I S &quot; ,   W I T H O U T   W A R R A N T Y   O F   A N Y   K I N D ,   E X P R E S S   O R   I M P L I E D ,   I N C L U D I N G   B U T   N O T   L I M I T E D   T O   A N Y   W A R R A N T I E S   O F   M E R C H A N T A B I L I T Y ,   F I T N E S S   F O R   A   P A R T I C U L A R   P U R P O S E   A N D   N O N I N F R I N G E M E N T   O F   C O P Y R I G H T ,   P A T E N T ,   T R A D E M A R K ,   O R   O T H E R   R I G H T .   I N   N O   E V E N T   S H A L L   T H E  
+ C O P Y R I G H T   H O L D E R   B E   L I A B L E   F O R   A N Y   C L A I M ,   D A M A G E S   O R   O T H E R   L I A B I L I T Y ,   I N C L U D I N G   A N Y   G E N E R A L ,   S P E C I A L ,   I N D I R E C T ,   I N C I D E N T A L ,   O R   C O N S E Q U E N T I A L   D A M A G E S ,   W H E T H E R   I N   A N   A C T I O N   O F   C O N T R A C T ,   T O R T   O R   O T H E R W I S E ,   A R I S I N G   F R O M ,   O U T   O F   T H E   U S E   O R   I N A B I L I T Y   T O   U S E   T H E   F O N T   S O F T W A R E   O R   F R O M   O T H E R   D E A L I N G S   I N   T H E   F O N T   S O F T W A R E .  Copyright (c) 2010, Kimberly Geswein (kimberlygeswein.com)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.  This license is copied below, and is also available with a FAQ at:  http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.    h t t p : / / s c r i p t s . s i l . o r g / O F L   http://scripts.sil.org/OFL                                   `           	 
+                        ! &quot; # $ % &amp; &#39; ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a £   ½  è     © ¤  Ú   ò ó    Ã Þ ñ  ª õ ô ö ¢ ­ É Ç ® b c  d Ë e È Ê Ï Ì Í Î é f Ó Ð Ñ ¯ g ð  Ö Ô Õ h ë í  j i k m l n   o q p r s u t v w ê x z y { } | ¸ ¡  ~   ì î º ý þ	
+ ÿ  ø ù !&quot;#$%&amp; ú ×&#39;()*+,-./01 â ã23456789:;&lt;=&gt; ° ±?@ABCDEFGH û ü ä åIJKLMNOPQRSTUVWXYZ[\] »^_`a æ ç ¦bcdefg Ø á Û Ü Ý à Ù ßhijklmno ² ³ ¶ · Ä ´ µ Å  Â  « ¾ ¿ ¼p  ï À ÁqrAmacronamacronAbreveabreveAogonekaogonekCcircumflexccircumflex
+Cdotaccent
+cdotaccentDcaronEmacronemacronEbreveebreve
+Edotaccent
+edotaccentEogonekeogonekEcaronecaronGcircumflexgcircumflex
+Gdotaccent
+gdotaccentGcommaaccentgcommaaccentHcircumflexhcircumflexHbarhbarItildeitildeimacronIbreveIogonekiogonekJcircumflexjcircumflexKcommaaccentkcommaaccentLacutelacuteLcommaaccentlcommaaccentLcaronLdotldotNacutenacuteNcommaaccentncommaaccentNcaronncaronnapostropheOmacronomacronObreveobreveOhungarumlautohungarumlautRacuteracuteRcommaaccentrcommaaccentRcaronrcaronSacutesacuteScircumflexscircumflexTcommaaccenttcommaaccentTcaronTbartbarUtildeutildeUmacronumacronUbreveubreveUringuringUhungarumlautuhungarumlautUogonekuogonekWcircumflexwcircumflexYcircumflexycircumflexZacutezacute
+Zdotaccent
+zdotaccentAEacuteaeacuteOslashacuteoslashacuteScommaaccentscommaaccentWgravewgraveWacutewacute	Wdieresis	wdieresisYgraveygraveEurocommaaccentImacron     ÿÿ        Éo1    É Ï    Ê3r</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Bajo</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://39.106.118.120</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Divulgación de información - Comentarios sospechosos</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://39.106.118.120/js/html5.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;(function(a,b){function h(a,b){var c=a.createElement(&quot;p&quot;),d=a.getElementsByTagName(&quot;head&quot;)[0]||a.documentElement;return c.innerH&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (403 bytes)</summary>
+				
+				<pre><code>GET http://39.106.118.120/js/html5.js HTTP/1.1
+Host: 39.106.118.120
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://39.106.118.120/login.php
+Cookie: PHPSESSID=ajo3gi77osurbbacrrnp5kq6k4
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (321 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2022 16:31:23 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Last-Modified: Fri, 22 May 2020 17:06:49 GMT
+ETag: &quot;95a-5a63fa7a03c40&quot;
+Accept-Ranges: bytes
+Content-Length: 2394
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2394 bytes)</summary>
+				
+				<pre><code>/*! HTML5 Shiv vpre3.6 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+  Uncompressed source: https://github.com/aFarkas/html5shiv  */
+(function(a,b){function h(a,b){var c=a.createElement(&quot;p&quot;),d=a.getElementsByTagName(&quot;head&quot;)[0]||a.documentElement;return c.innerHTML=&quot;x&lt;style&gt;&quot;+b+&quot;&lt;/style&gt;&quot;,d.insertBefore(c.lastChild,d.firstChild)}function i(){var a=l.elements;return typeof a==&quot;string&quot;?a.split(&quot; &quot;):a}function j(a){var b={},c=a.createElement,f=a.createDocumentFragment,g=f();a.createElement=function(a){if(!l.shivMethods)return c(a);var f;return b[a]?f=b[a].cloneNode():e.test(a)?f=(b[a]=c(a)).cloneNode():f=c(a),f.canHaveChildren&amp;&amp;!d.test(a)?g.appendChild(f):f},a.createDocumentFragment=Function(&quot;h,f&quot;,&quot;return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&amp;&amp;(&quot;+i().join().replace(/\w+/g,function(a){return c(a),g.createElement(a),&#39;c(&quot;&#39;+a+&#39;&quot;)&#39;})+&quot;);return n}&quot;)(l,g)}function k(a){var b;return a.documentShived?a:(l.shivCSS&amp;&amp;!f&amp;&amp;(b=!!h(a,&quot;article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio{display:none}canvas,video{display:inline-block;*display:inline;*zoom:1}[hidden]{display:none}audio[controls]{display:inline-block;*display:inline;*zoom:1}mark{background:#FF0;color:#000}&quot;)),g||(b=!j(a)),b&amp;&amp;(a.documentShived=b),a)}var c=a.html5||{},d=/^&lt;|^(?:button|form|map|select|textarea|object|iframe|option|optgroup)$/i,e=/^&lt;|^(?:a|b|button|code|div|fieldset|form|h1|h2|h3|h4|h5|h6|i|iframe|img|input|label|li|link|ol|option|p|param|q|script|select|span|strong|style|table|tbody|td|textarea|tfoot|th|thead|tr|ul)$/i,f,g;(function(){var c=b.createElement(&quot;a&quot;);c.innerHTML=&quot;&lt;xyz&gt;&lt;/xyz&gt;&quot;,f=&quot;hidden&quot;in c,f&amp;&amp;typeof injectElementWithStyles==&quot;function&quot;&amp;&amp;injectElementWithStyles(&quot;#modernizr{}&quot;,function(b){b.hidden=!0,f=(a.getComputedStyle?getComputedStyle(b,null):b.currentStyle).display==&quot;none&quot;}),g=c.childNodes.length==1||function(){try{b.createElement(&quot;a&quot;)}catch(a){return!0}var c=b.createDocumentFragment();return typeof c.cloneNode==&quot;undefined&quot;||typeof c.createDocumentFragment==&quot;undefined&quot;||typeof c.createElement==&quot;undefined&quot;}()})();var l={elements:c.elements||&quot;abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video&quot;,shivCSS:c.shivCSS!==!1,shivMethods:c.shivMethods!==!1,type:&quot;default&quot;,shivDocument:k};a.html5=l,k(b)})(this,document)</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>select</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Eliminar todos los comentarios que devuelvan información que podría ayudar a un atacante y arreglar cualquier problema subyacente al que se refieran.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Ausencia de fichas (tokens) Anti-CSRF</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Ausencia de fichas (tokens) Anti-CSRF</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a></li>
+										<li><a
+											href="http://cwe.mitre.org/data/definitions/352.html">http://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Divulgación de la marca de hora - Unix</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10096/">Divulgación de la marca de hora</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/Archive/2013/04/23/Remove-Unwanted-http-Response-headers.aspx http://www.troyhunt.com/2012/02/shhh-don &#39; t-deje-la-respuesta-headers.html">http://blogs.msdn.com/b/varunm/Archive/2013/04/23/Remove-Unwanted-http-Response-headers.aspx http://www.troyhunt.com/2012/02/shhh-don &#39; t-deje-la-respuesta-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Content-Type Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10019/">Content-Type Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>12</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Divulgación de información - Comentarios sospechosos</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Divulgación de información - Comentarios sospechosos</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
